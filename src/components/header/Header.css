@@ -1,0 +1,119 @@
+header {
+    background-color: var(--header-bg-color);
+}
+
+.btn.icon-outline-secondary {
+    border-radius: 50%;
+    padding: 0.5rem;
+    border: 1px solid var(--icon-outline-secondary-border);
+    transition: all 0.3s;
+}
+
+.btn.icon-outline-secondary:hover {
+    border: 1px solid var(--icon-outline-secondary-border-hover);
+    background-color: white;
+    color: var(--icon-outline-secondary);
+}
+
+.btn-avatar {
+    border-radius: 50%;
+    padding: 0;
+}
+
+.avatar {
+    border-radius: 100%;
+    margin: 0;
+    height: 2.5rem;
+    width: 2.5rem;
+}
+
+.dropdown .dropdown-menu {
+    border-radius: 0.5rem;
+    border: 1px solid var(--border);
+    box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 12px;
+    transition: all 0.3s;
+    z-index: 9999;
+}
+
+.dropdown-menu li {
+    position: relative;
+}
+
+.dropdown-menu .dropdown-header {
+    color: var(--text-primary);
+}
+
+.dropdown-header p {
+    margin: 0;
+}
+
+.dropdown-menu .dropdown-item {
+    color: var(--blue-42);
+}
+
+.dropdown-menu .dropdown-divider {
+    border-top: 1px solid var(--border);
+}
+
+.dropdown-menu .dropdown-submenu {
+    display: none;
+    position: absolute;
+    left: 100%;
+    top: -7px;
+}
+
+.dropdown-menu > li:hover > .dropdown-submenu {
+    display: block;
+}
+
+.dropdown-menu .dropdown-submenu-left {
+    right: 100%;
+    left: auto;
+}
+
+.search .form-control {
+    border: none;
+    background-color: var(--bg-color);
+}
+
+.search {
+    background-color: var(--bg-color);
+    border-radius: 1.25rem;
+    border: 1px solid var(--border);
+}
+
+.search .form-control:focus {
+    background-color: var(--bg-color);
+}
+
+.btn.show.notify_btn {
+    color: var(--icon-outline-secondary);
+}
+
+.notifications {
+    width: 300px;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+.notifications-item {
+    display: flex;
+    border-bottom: 1px solid #eee;
+    padding: 6px 9px;
+    margin-bottom: 0px;
+    cursor: pointer;
+}
+
+.notifications-item:hover {
+    background-color: #eee;
+}
+
+.notifications-item .text h4 {
+    color: #777;
+    font-size: 16px;
+    margin-top: 3px;
+}
+
+.notifications-item .text p {
+    color: #aaa;
+    font-size: 12px;
+}

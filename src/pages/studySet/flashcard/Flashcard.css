@@ -1,0 +1,448 @@
+.flashcardHeader {
+    background: #fff;
+    height: 4rem;
+    padding: 0 1.5rem;
+}
+
+.flashcardModeIcon {
+    color: #4255ff;
+}
+
+.flashcardMode {
+    min-height: 4rem;
+    cursor: pointer;
+    transition: all 0.12s cubic-bezier(0.47, 0, 0.745, 0.715);
+}
+
+.flashcardMode button {
+    color: #586380;
+    font-size: 1rem;
+    letter-spacing: normal;
+    line-height: 1.5;
+    font-weight: 600;
+}
+
+.flashcardMode:hover {
+    background: #f6f7fb;
+}
+
+.flashcardInfo {
+    margin: 0.75rem 0;
+}
+
+.flashcardInfo h3 {
+    font-size: 1rem;
+    letter-spacing: normal;
+    line-height: 1.5;
+    font-weight: 600;
+    word-wrap: break-word;
+    margin: 0;
+}
+
+.flashcardOptions_btn {
+    padding: 0.5rem 1rem;
+    background-color: #fff;
+    border: 0.0625rem solid #d9dde8;
+    color: #586380;
+    font-size: 0.875rem;
+    letter-spacing: normal;
+    line-height: 1.43;
+    border-radius: 0.5rem;
+    min-height: 2.5rem;
+    font-weight: 600;
+    transition: all 0.12s cubic-bezier(0.47, 0, 0.745, 0.715);
+}
+
+.flashcardOptions_btn:hover,
+.flashcardClose_btn:hover {
+    background: #edeff4;
+}
+
+.flashcardClose_btn {
+    padding: 0.6875rem;
+    height: 2.5rem;
+    width: 2.5rem;
+    background: #fff;
+    color: #586380;
+    border: 0.0625rem solid #d9dde8;
+    transition: all 0.12s cubic-bezier(0.47, 0, 0.745, 0.715);
+    border-radius: 0.5rem;
+    min-height: 2.5rem;
+    font-size: 0.875rem;
+    letter-spacing: normal;
+    line-height: 1.43;
+}
+
+.flashcardProgressContainer {
+    height: 0.125rem;
+    background-color: none;
+}
+
+.flashcardProgress {
+    background-color: #7583ff;
+    height: 100%;
+}
+
+.flashcardMain {
+    width: 80vw;
+    margin: 1.5rem 1rem 0;
+}
+
+.flashcardContentContainer {
+    perspective: 62.5rem;
+    background-color: #fff;
+    box-shadow: 0 0.25rem 1rem 0 #2e385614;
+    border-radius: 0.5rem;
+}
+
+.flashcardContentWrapper {
+    position: relative;
+    height: 70vh;
+    width: 100%;
+    transition: transform 0.8s;
+    transform-style: preserve-3d;
+}
+
+.is-flipped {
+    transform: rotateY(180deg);
+}
+
+.flashcardFront,
+.flashcardBack {
+    position: absolute;
+    height: 70vh;
+    -webkit-backface-visibility: hidden; /* Safari */
+    backface-visibility: hidden;
+    padding: 2.5rem 3rem;
+}
+
+.flashcardFront {
+    font-size: 32px;
+    width: 100%;
+}
+
+.flashcardFront p,
+.flashcardBack p {
+    margin: 0;
+}
+
+.flashcardBack {
+    transform: rotateY(180deg);
+    width: 100%;
+    overflow: auto;
+}
+
+.flashCardField_label {
+    font-size: 1.25rem;
+    font-weight: 600;
+    text-transform: capitalize;
+}
+
+.flashCardField_content {
+    font-size: 1rem;
+}
+
+.flashcardControls {
+    margin-bottom: 1rem;
+    margin-top: 5rem;
+}
+
+.flashcardPlay_btn {
+    height: 2.5rem;
+    width: 2.5rem;
+    border-radius: 50%;
+    padding: 0.5rem;
+    color: #586380;
+    transition: all 0.15s;
+}
+
+.flashcardPlay_btn:hover,
+.flashCardSwitch_btn:hover {
+    background: #edeff4;
+}
+
+.flashCardSwitch_btn {
+    padding: 0.625rem;
+    height: 3rem;
+    width: 3rem;
+    border-radius: 50%;
+    background: #fff;
+    color: #586380;
+    border: 0.0625rem solid #d9dde8;
+    transition: all 0.15s;
+}
+
+.flashCardSwitch_btn:disabled,
+.flashcardPlay_btn:hover:disabled {
+    color: #d9dde8;
+    cursor: default;
+    background: #fff;
+}
+
+.flashCardNote {
+    height: 25rem;
+    width: 100%;
+}
+
+.flashCardField_img {
+    height: 100%;
+    width: 100%;
+}
+
+.flashCardField_img img {
+    max-width: 100%;
+    max-height: 100%;
+}
+
+.flashcardEnd {
+    text-align: center;
+    max-width: 75rem;
+}
+
+.flashcardEnd h2 {
+    font-size: 2rem;
+    letter-spacing: normal;
+    line-height: 1.25;
+    font-weight: 700;
+}
+
+.flashcardEnd img {
+    margin-top: 1rem;
+    max-width: 100%;
+    max-height: 20rem;
+}
+
+.flashcardEnd_btn {
+    font-size: 0.875rem;
+    letter-spacing: normal;
+    line-height: 1.428;
+    font-weight: 600;
+    color: var(--text-light);
+    cursor: pointer;
+    z-index: 2000;
+}
+
+/* congratulation animation */
+@keyframes confetti-slow {
+    0% {
+        transform: translate3d(0, 0, 0) rotateX(0) rotateY(0);
+    }
+
+    100% {
+        transform: translate3d(25px, 105vh, 0) rotateX(360deg) rotateY(180deg);
+    }
+}
+
+@keyframes confetti-medium {
+    0% {
+        transform: translate3d(0, 0, 0) rotateX(0) rotateY(0);
+    }
+
+    100% {
+        transform: translate3d(100px, 105vh, 0) rotateX(100deg) rotateY(360deg);
+    }
+}
+
+@keyframes confetti-fast {
+    0% {
+        transform: translate3d(0, 0, 0) rotateX(0) rotateY(0);
+    }
+
+    100% {
+        transform: translate3d(-50px, 105vh, 0) rotateX(10deg) rotateY(250deg);
+    }
+}
+
+.confetti-container {
+    perspective: 700px;
+    overflow: hidden;
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+}
+
+.confetti {
+    position: absolute;
+    z-index: 1;
+    top: -10px;
+    border-radius: 0%;
+}
+
+.confetti--animation-slow {
+    animation: confetti-slow 3.25s linear 1 forwards;
+}
+
+.confetti--animation-medium {
+    animation: confetti-medium 2.75s linear 1 forwards;
+}
+
+.confetti--animation-fast {
+    animation: confetti-fast 2.25s linear 1 forwards;
+}
+
+/* Checkmark */
+.checkmark-circle {
+    width: 150px;
+    height: 150px;
+    position: relative;
+    display: inline-block;
+    vertical-align: top;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.checkmark-circle .background {
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    background: #00c09d;
+    position: absolute;
+}
+
+.checkmark-circle .checkmark {
+    border-radius: 5px;
+}
+
+.checkmark-circle .checkmark.draw:after {
+    -webkit-animation-delay: 100ms;
+    -moz-animation-delay: 100ms;
+    animation-delay: 100ms;
+    -webkit-animation-duration: 2s;
+    -moz-animation-duration: 2s;
+    animation-duration: 2s;
+    -webkit-animation-timing-function: ease;
+    -moz-animation-timing-function: ease;
+    animation-timing-function: ease;
+    -webkit-animation-name: checkmark;
+    -moz-animation-name: checkmark;
+    animation-name: checkmark;
+    -webkit-transform: scaleX(-1) rotate(135deg);
+    -moz-transform: scaleX(-1) rotate(135deg);
+    -ms-transform: scaleX(-1) rotate(135deg);
+    -o-transform: scaleX(-1) rotate(135deg);
+    transform: scaleX(-1) rotate(135deg);
+    -webkit-animation-fill-mode: forwards;
+    -moz-animation-fill-mode: forwards;
+    animation-fill-mode: forwards;
+}
+
+.checkmark-circle .checkmark:after {
+    opacity: 1;
+    height: 75px;
+    width: 37.5px;
+    -webkit-transform-origin: left top;
+    -moz-transform-origin: left top;
+    -ms-transform-origin: left top;
+    -o-transform-origin: left top;
+    transform-origin: left top;
+    border-right: 15px solid white;
+    border-top: 15px solid white;
+    border-radius: 2.5px !important;
+    content: '';
+    left: 25px;
+    top: 75px;
+    position: absolute;
+}
+
+@-webkit-keyframes checkmark {
+    0% {
+        height: 0;
+        width: 0;
+        opacity: 1;
+    }
+    20% {
+        height: 0;
+        width: 37.5px;
+        opacity: 1;
+    }
+    40% {
+        height: 75px;
+        width: 37.5px;
+        opacity: 1;
+    }
+    100% {
+        height: 75px;
+        width: 37.5px;
+        opacity: 1;
+    }
+}
+
+@-moz-keyframes checkmark {
+    0% {
+        height: 0;
+        width: 0;
+        opacity: 1;
+    }
+    20% {
+        height: 0;
+        width: 37.5px;
+        opacity: 1;
+    }
+    40% {
+        height: 75px;
+        width: 37.5px;
+        opacity: 1;
+    }
+    100% {
+        height: 75px;
+        width: 37.5px;
+        opacity: 1;
+    }
+}
+
+@keyframes checkmark {
+    0% {
+        height: 0;
+        width: 0;
+        opacity: 1;
+    }
+    20% {
+        height: 0;
+        width: 37.5px;
+        opacity: 1;
+    }
+    40% {
+        height: 75px;
+        width: 37.5px;
+        opacity: 1;
+    }
+    100% {
+        height: 75px;
+        width: 37.5px;
+        opacity: 1;
+    }
+}
+
+.flashcardContent_noteBtn {
+    position: absolute;
+    top: 5px;
+    right: 5px;
+}
+
+.flashcardContent_noteBtn button {
+    width: 32px;
+    height: 32px;
+}
+
+.flashcardContent_noteModal {
+    position: absolute;
+    z-index: 1;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.4);
+}
+
+.flashcardContent_noteModal .modal-content {
+    overflow: auto;
+    margin: 5vh auto;
+    border-radius: 0.325rem;
+    background-color: #fefefe;
+    padding: 20px;
+    border: 1px solid #888;
+    width: 70vw;
+    height: 80vh;
+}

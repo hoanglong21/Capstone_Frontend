@@ -1,0 +1,217 @@
+.ht-container {
+    background: #E5E5E5;
+    padding: 50px;
+}
+
+.ht-container1 {
+    display: flex;
+    margin-left: auto;
+    margin-right: auto;
+    padding-left: 30px;
+    padding-right: 30px;
+    padding-top: 30px;
+}
+
+.site-header__title {
+    color: #fff;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+    font-size: 30px;
+    font-weight: 500;
+}
+
+.hkb-site-search {
+    position: relative;
+    max-width: 600px;
+    margin: 20px auto 0;
+}
+
+.hkb-site-search::after {
+    position: absolute;
+    display: block;
+    content: "";
+    background: url("../images//search.png") no-repeat center center;
+    background-size: 20px;
+    height: 20px;
+    width: 20px;
+    top: 50%;
+    left: 15px;
+    margin-top: -10px;
+    opacity: 0.7;
+}
+
+.hkb-screen-reader-text {
+    clip: rect(1px, 1px, 1px, 1px);
+    position: absolute !important;
+    height: 1px;
+    width: 1px;
+    overflow: hidden;
+}
+
+.hkb-site-search .hkb-site-search__field {
+    -webkit-border-radius: 99px;
+    -moz-border-radius: 99px;
+    -ms-border-radius: 99px;
+    border-radius: 99px;
+    display: block;
+    width: 100%;
+    padding: 18px 20px 18px 45px;
+    border: 0;
+    outline: none;
+    box-shadow: 0 0 0 5px rgba(255,255,255,.15);
+}
+
+.hkb-site-search .hkb-site-search__button {
+    display: none;
+}
+
+.hkb-archive__title {
+    font-size: 24px;
+    padding: 0 0 10px;
+    border-bottom: 1px solid #e6e6e6;
+    font-weight: 700;
+    text-transform: none;
+    color: #333333;
+}
+
+.ht-page__content {
+    max-width: 100%;
+}
+
+.hkb-archive {
+    display: flex;
+    flex-flow: row wrap;
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+.ht-page__content {
+    width: 70%;
+    padding-right: 15px;
+}
+
+/* @media screen and (min-width: 650px) */
+.hkb-archive {
+    margin-left: -10px;
+    margin-right: -10px;
+}
+
+.hkb-archive>li {
+    flex-basis: auto;
+    display: list-item;
+    text-align: -webkit-match-parent;
+}
+
+/* @media screen and (min-width: 650px) */
+.hkb-archive.hkb-archive--2cols>li {
+    width: 50%;
+}
+
+.hkb-category.hkb-category--style7 {
+    display: flex;
+    height: 100%;
+}
+
+.hkb-category__link {
+    display: flex;
+    height: 100%;
+    width: 100%;
+    padding: 25px 10px;
+    text-decoration: none;
+}
+
+.hkb-category .hkb-category__link {
+    border-bottom: 1px solid #e6e6e6;
+}
+
+.ht-mobile-exit {
+    border-radius: 5px;
+    background: #f4f5f5;
+    padding: 20px;
+    margin: 20px 0;
+    font-size: 15px;
+    line-height: 1.4;
+}
+
+.ht-mobile-exit .ht-mobile-exit__title {
+    display: block;
+    margin: 0 0 10px;
+    font-size: 16px;
+    color: #333;
+}
+
+.ht-mobile-exit .hkb_widget_exit__content {
+    margin: 0 0 12px;
+}
+
+.hkb-category__iconwrap img {
+    margin: 0 auto;
+}
+
+.hkb-category .hkb-category__iconwrap img{
+    max-height: 35px;
+    max-width: 35px;
+    transition: all .3s ease-in-out;
+    display: block;
+    border-style: none;
+}
+
+.hkb-category__title {
+    width: 100%;
+    font-size: 18px;
+    line-height: 1.25;
+    color: #333;
+    margin: 0;
+    align-self: flex-end;
+    font-weight: 700;
+    text-transform: none;
+}
+
+.hkb-category__iconwrap {
+    margin: 0 20px 0 0;
+    text-align: center;
+}
+
+.hkb-category__content {
+    display: flex;
+    flex-wrap: wrap;
+    width: 100%;
+}
+
+.hkb-category__description {
+    font-size: 15px;
+    line-height: 20px;
+    color: #8a8a8a;
+    margin: 8px 0 0;
+    align-self: flex-start;
+}
+
+.sidebar {
+    height: 100%;
+    font-size: 15px;
+}
+
+.widget {
+    border-radius: 5px;
+    background: #f4f5f5;
+    padding: 0 30px 30px 30px;
+    margin: 0 0 20px;
+    font-size: 14px;
+    line-height: 1.4;
+}
+
+.hkb_widget_exit__btn {
+    margin-top: 10px;
+    display: inline-block;
+    text-decoration: none;
+    color: #fff;
+    font-size: 16px;
+    text-transform: uppercase;
+    padding: 15px 18px;
+    line-height: 1;
+    font-weight: 400;
+    border-radius: 99px;
+    background-color: #1991EB;
+    border: #1991EB;
+}

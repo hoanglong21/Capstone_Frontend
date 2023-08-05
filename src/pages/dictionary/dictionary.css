@@ -1,0 +1,263 @@
+/* Vocab */
+.dictSection_title {
+    font-weight: 500;
+    margin-bottom: 0.75rem;
+    word-break: break-all;
+    font-size: 1rem;
+    margin-top: 0.5rem;
+}
+
+.dictResultWordList {
+    background-color: #fff;
+}
+
+.dictResultWord {
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    cursor: pointer;
+    padding: 0.625rem 1.25rem;
+    font-weight: 400;
+    border-bottom: solid 1px #f7f7f7;
+    font-size: 1rem;
+}
+
+.dictResultWord.active {
+    background-color: #2bb3ff;
+    color: white;
+}
+
+.dictResultWord:hover {
+    background-color: #5dc4fd;
+    color: white;
+}
+
+.word {
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+}
+
+.wordSense {
+    font-style: normal;
+    font-size: 0.875rem;
+    padding-top: 0.1875rem;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    line-height: 1.25;
+}
+
+.word-detail {
+    background-color: white;
+    padding: 0.625rem 1.25rem;
+}
+
+.word-detail-overview {
+    font-size: 1.875rem;
+    font-weight: 500;
+}
+
+.txtFurigana {
+    color: #888;
+    font-size: 1rem;
+    margin-top: 5px;
+}
+
+.word-type {
+    font-size: 0.875rem;
+    margin: 5px 0;
+    background-color: #f1f1f1;
+    display: inline-block;
+    padding: 3px 10px;
+}
+
+.word-meaning {
+    font-size: 1rem;
+    font-weight: 600;
+    margin-top: 15px;
+    margin-left: 2rem;
+    margin-bottom: 10px;
+}
+
+.wordExampleJa {
+    color: #d22f0f;
+}
+/* Vocab */
+
+/* Kanji */
+.kanji-search {
+    padding: 30px;
+    background-color: white;
+}
+
+.kanji-search-header {
+    padding: 10px;
+    text-align: center;
+    line-height: 40px;
+    text-transform: uppercase;
+    font-size: 30px;
+}
+
+.kanji-search-main {
+    padding: 30px 0 40px 10px;
+}
+
+.kanji-search-block {
+    margin-bottom: 40px;
+}
+
+.kanji-search-block.ed {
+    width: 49%;
+    box-sizing: border-box;
+    margin-right: 0;
+    height: 60px;
+    float: left;
+}
+
+.kanji-search-block label {
+    font-size: 15px;
+    margin-bottom: 10px;
+    color: #000;
+}
+
+.kanji-search-block p {
+    font-size: 15px;
+    color: #545454;
+    line-height: 20px;
+}
+
+p.kanji-search-bold {
+    color: #ea151d;
+    font-weight: 700;
+}
+
+.kanji-search-block .ony {
+    background: #33b874;
+}
+
+.kanji-search-block .kuny {
+    background: #52b1a9;
+}
+
+.kanji-search-block .kuny,
+.kanji-search-block .ony {
+    margin-bottom: 5px;
+    margin-right: 10px;
+    display: inline-block;
+    padding: 0 5px;
+    height: 20px;
+    line-height: 20px;
+    color: #fff;
+    font-size: 13px;
+    border-radius: 4px;
+    cursor: default;
+}
+
+.kanji_svg svg,
+.svgKanji svg {
+    pointer-events: initial;
+}
+/* Kanji */
+
+/* Grammar */
+.grammar_item {
+    box-shadow: 0px 3px 6px rgba(0, 0, 0, 0.23);
+    padding: 0.25rem 0.5rem;
+    cursor: pointer;
+}
+
+.grammar_title {
+    font-size: 1.1875rem;
+    line-height: 1.4375rem;
+    font-weight: 400;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+}
+
+.grammar_meaning {
+    font-size: 0.875rem;
+    line-height: 1rem;
+    font-weight: 400;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+}
+
+.grammarDetail_header {
+    background: linear-gradient(360deg, #eee, #e7e3e3 0, #efefef 45.65%);
+    position: relative;
+}
+
+.grammarDetailClose_button {
+    position: absolute;
+    top: 15;
+    right: 15;
+}
+
+.modal-title#grammarDetailModalLabel {
+    font-size: 3.75rem !important;
+    line-height: 4.25rem;
+    text-shadow: 0 0.125rem 0.1875rem rgba(0, 0, 0, 0.25);
+    color: rgb(219 79 74 / 1) !important;
+    font-weight: 600;
+}
+
+.grammarDetail_meaning {
+    font-size: 1.375rem;
+    line-height: 1.7875rem;
+    font-weight: 400;
+}
+
+.grammarDetail_attention {
+    color: rgba(221 156 29/1);
+}
+
+.card.grammarDetail_block {
+    background: linear-gradient(360deg, #eee, #e7e3e3 0, #efefef 45.65%);
+    margin-bottom: 1rem;
+    border: none;
+}
+
+.grammarDetail_subtitle {
+    font-size: 1.375rem;
+    line-height: 1.7875rem;
+    margin-bottom: 1rem;
+}
+
+.grammar_structure {
+    font-size: 1rem;
+    line-height: 1.5rem;
+    white-space: pre-wrap;
+}
+
+.synonymItem {
+    background-color: #fff;
+    border-radius: 0.5rem;
+    cursor: pointer;
+    padding: 1rem;
+}
+
+.synonym_text {
+    font-size: 1rem;
+    line-height: 1.25rem;
+    color: rgba(80, 80, 80);
+    font-weight: 700;
+}
+
+.synonym_explanation {
+    font-size: 0.875rem;
+    line-height: 1rem;
+    color: rgba(109, 109, 109);
+    font-weight: 600;
+}
+
+.exampleItem {
+    background-color: #fff;
+    border-radius: 0.5rem;
+    padding: 1rem;
+    white-space: pre-wrap;
+}
+
+/* Grammar */

@@ -1,0 +1,16 @@
+.unauthorize span {
+    color: var(--text-light);
+    font-size: 1.1rem;
+    letter-spacing: 0.4;
+}
+
+.unauthorize .nav-link {
+    color: var(--text-light);
+    text-decoration: underline;
+    display: inline;
+}
+
+.unauthorize .btn:first-child:active {
+    color: var(--btn-info);
+    background-color: var(--btn-info-bg-hover);
+}

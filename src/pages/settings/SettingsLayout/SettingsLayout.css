@@ -1,0 +1,46 @@
+:root {
+    --sidebar-link: var(--text-light);
+    --sidebar-link-hover: var(--cyan-blue-38);
+    --sidebar-link-bg: var(--blue-96);
+    --sidebar-link--warning: var(--pink-red-71);
+    --sidebar-link-hover--warning: var(--pink-red-51);
+    --sidebar-link-bg-hover--warning: var(--red-94);
+}
+
+.card-account__container {
+    background-color: white;
+    border-radius: 1.25rem;
+    margin-top: 2rem;
+    padding: 2rem;
+}
+
+.card-account__sidebar-link {
+    color: var(--sidebar-link);
+    font-size: 1rem;
+    text-decoration: none;
+    padding: 0.5rem 1rem;
+    font-weight: 600;
+    transition: all 0.3s;
+    border-radius: 1.5rem;
+    transition: all 0.2s;
+}
+
+.card-account__sidebar-link:hover,
+.card-account__sidebar-link.active {
+    color: var(--sidebar-link-hover);
+    background-color: var(--sidebar-link-bg);
+}
+
+.card-account__sidebar-link--warning {
+    color: var(--sidebar-link--warning);
+}
+
+.card-account__sidebar-link:hover.card-account__sidebar-link--warning {
+    color: var(--sidebar-link-hover--warning);
+    background-color: inherit;
+}
+
+.card-account__sidebar-link.active.card-account__sidebar-link--warning {
+    color: var(--sidebar-link-hover--warning);
+    background-color: var(--sidebar-link-bg-hover--warning);
+}

@@ -1,0 +1,37 @@
+.containerTest {
+    width: 70vw;
+    background: white;
+    color: #000;
+    margin: 20px auto;
+    overflow: auto;
+    padding: 2.6rem;
+    border: 2px solid #EDEFF4;
+  }
+
+  .submitTest{
+    background: #22A5F1;
+    border: #22A5F1;
+    border-radius: 5px;
+    color: #fff;
+    padding: 10px 12px;
+    cursor: pointer;
+    text-align: center;
+  }
+
+  .results {
+    margin-top: 1rem;
+  }
+
+  .results h3 {
+    background: #EEE4E1;
+    padding: 10px;
+    margin: 10px 0;
+    color: #000;
+  }
+  .testForm > input{
+    margin-right: 1rem;
+  }
+
+  .testForm h5{
+    margin-top: 1rem;
+  }

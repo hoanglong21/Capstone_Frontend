@@ -1,0 +1,61 @@
+.userAvatar {
+    height: 5rem;
+    width: 5rem;
+    position: relative;
+}
+
+.userAvatar img {
+    border-radius: 50%;
+    width: 5rem;
+    height: 5rem;
+}
+
+.userAvatar button {
+    position: absolute;
+    bottom: -5;
+    right: 0;
+    border-radius: 100%;
+    width: 1.5rem;
+    height: 1.5rem;
+}
+
+.avatarModal .modal-dialog {
+    max-width: 70vw;
+}
+
+.modal-heading p {
+    font-size: 1.25rem;
+    font-weight: 700;
+    line-height: 1.2;
+    margin: 0;
+}
+
+.avatarItem {
+    cursor: pointer;
+    position: relative;
+}
+
+.avatarItem .btn {
+    padding: 0.3rem;
+}
+
+.avatarItem img {
+    border-radius: 50%;
+    width: 4.5rem;
+    height: 4.5rem;
+}
+
+.avatarItem .btn-del {
+    position: absolute;
+    bottom: -30;
+    right: 2;
+}
+
+.avatarUpload {
+    opacity: 0;
+    display: none;
+}
+
+.avatarModal label {
+    padding: 0.4rem 0.75rem;
+}

@@ -1,0 +1,26 @@
+.notification_formContainer legend {
+    letter-spacing: 0.5px;
+    padding: 12px 0 6px;
+    font-weight: 400;
+    font-size: 0.875rem;
+}
+
+.notification_formContainer .form-check-label,
+.notification_formContainer .form-label {
+    font-size: 1.025rem;
+    font-weight: 400;
+    line-height: 1.625;
+}
+
+.notification_formContainer .form-check-label {
+    margin-left: 0.5rem;
+}
+
+.notification_formContainer .form-check-input {
+    width: 1.25rem;
+    height: 1.25rem;
+}
+
+.notification_formTime {
+    max-width: 9.375rem;
+}

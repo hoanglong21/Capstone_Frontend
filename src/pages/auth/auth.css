@@ -1,0 +1,82 @@
+.authform {
+  margin-top: 5rem;
+  padding-right: 1.5rem !important;
+}
+
+.auth-header-h5 {
+  margin-bottom: 3rem !important;
+}
+
+.auth-login {
+  position: relative;
+  padding-right: 3rem !important;
+  margin-right: 3rem !important;
+  margin-top: 1.5rem !important;
+}
+
+.col-md-6 > img {
+  width: 100% !important;
+  align-items: flex-start !important;
+  display: flex !important;
+}
+
+.auth-forgot{
+    margin-top: 1.5rem !important;
+}
+
+.auth-link{
+    margin-bottom: 3rem !important;
+}
+
+@media only screen and (max-width: 768px) {
+  .col-md-6 > img {
+    margin-top: -20px;
+  }
+
+  .auth-login {
+    position: relative;
+    padding-right: 0rem !important;
+    margin-right: -3.5rem !important;
+    margin-left: -3.5rem !important;
+    margin-top: 0.3rem !important;
+  }
+
+  .auth {
+    width: 80%;
+  }
+  .auth-header {
+    font-size: 20px !important;
+  }
+
+  .auth-header-h5 {
+    font-size: 14px;
+    margin-bottom: 1.3rem !important;
+  }
+
+  .authform {
+    width: 100%;
+    margin-top: 1rem;
+    padding-right: 0rem !important;
+  }
+
+  .authform .form-group > label {
+    font-size: 15px !important;
+  }
+
+  .authform .form-group input::placeholder, .form-check-label{
+    font-size: 13px !important;
+  }
+
+  .auth-forgot{
+    font-size: 14px !important;
+    margin-top: 0.5rem!important;
+  }
+
+  .error{
+    font-size: 14px !important;
+  }
+
+  .auth-link{
+    margin-bottom: 1rem !important;
+}
+}

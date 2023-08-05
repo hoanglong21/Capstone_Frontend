@@ -1,0 +1,352 @@
+.setPageContainer {
+    margin: 0 auto;
+    max-width: 65rem;
+    padding: 2.5rem;
+}
+
+.setTitle {
+    font-weight: 700;
+    font-size: 2rem;
+    letter-spacing: normal;
+    line-height: 1.25;
+    margin-bottom: 2rem;
+}
+
+.studyModesItem {
+    box-shadow: 0 0.0625rem 0.1875rem 0 #2e385614;
+    background: #fff;
+    border-bottom: 0.25rem solid #0000;
+    border-radius: 0.5rem;
+    cursor: pointer;
+    padding: 0.5rem 0.75rem;
+    transition: all 0.2s;
+    text-decoration: none;
+}
+
+.studyModesItem:hover {
+    box-shadow: 0 0.25rem 1rem 0 var(--shadow-with-opacity);
+    border-bottom-color: #dbdfff;
+}
+
+.StudyModesIcon {
+    color: #4255ff;
+}
+
+.studyModesItemName {
+    font-size: 1rem;
+    letter-spacing: normal;
+    line-height: 1.5;
+    font-weight: 600;
+    text-decoration: none;
+    margin-left: 0.75rem;
+    color: var(--text-primary);
+}
+
+.setPageInformation {
+    padding-top: 2rem;
+    padding-bottom: 2rem;
+}
+
+.setAuthorAvatar {
+    border-radius: 50%;
+    overflow: hidden;
+    height: 48px;
+    width: 48px;
+}
+
+.setAuthorInfo_createdBy {
+    font-size: 0.625rem;
+    color: #939bb4;
+    display: block;
+}
+
+.setAuthorInfo_username {
+    font-size: 1rem;
+    letter-spacing: normal;
+    line-height: 1.5;
+    font-weight: 600;
+}
+
+.setPageOptions {
+    height: 2.5rem;
+    width: 2.5rem;
+    background-color: #fff;
+    color: #586380;
+    border: 0.0625px solid #d9dde8;
+    border-radius: 5px;
+}
+
+.setPageTermsHeader {
+    margin-bottom: 0.625rem;
+}
+
+.setPageTermsHeading {
+    font-size: 1.25rem;
+    letter-spacing: normal;
+    line-height: 1.4;
+    font-weight: 700;
+    margin-bottom: 0.5rem;
+}
+
+.setPageTermsHeader_controls button {
+    color: var(--text-light);
+    font-size: 1rem;
+    letter-spacing: normal;
+    line-height: 1.5;
+    font-weight: 600;
+    min-height: 3rem;
+}
+
+.setPageTermHeader_dropdown {
+    font-size: 0.875rem;
+    letter-spacing: 0.25;
+}
+
+.setPageTerm {
+    background-color: #fff;
+    border-radius: 0.25rem;
+    min-height: 3.625rem;
+    box-shadow: 0 0.125rem 0.25rem #00000014;
+    padding: 1rem;
+    padding-right: 0;
+}
+
+.setPageTerm_termText {
+    padding: 0 2rem;
+    word-wrap: break-word;
+    font-size: 1.1rem;
+}
+
+.setPageTerm_termText p,
+.setPageTerm_termText ul,
+.setPageTerm_definitionText p,
+.setPageTerm_definitionText ul {
+    margin: 0;
+}
+
+.setPageTerm_definitionText {
+    padding: 0 2rem;
+    word-wrap: break-word;
+    font-size: 1.1rem;
+}
+
+.setPageTerm_imageWrap {
+    height: 6.25rem;
+    width: 9.5rem;
+}
+
+.setPageTerm_imageWrap img {
+    max-height: 100%;
+    max-width: 100%;
+}
+
+.setPageTerm_btn.star,
+.setPageTerm_btn.star:hover {
+    color: #ffdc62;
+}
+
+.setPage_noteModal {
+    position: fixed;
+    z-index: 1;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.4);
+}
+
+.setPage_noteModal .modal-content {
+    overflow: auto;
+    margin: 5vh auto;
+    border-radius: 0.325rem;
+    background-color: #fefefe;
+    padding: 20px;
+    border: 1px solid #888;
+    width: 70vw;
+    height: 80vh;
+}
+
+.setPage_noteModal .close {
+    color: #aaa;
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+}
+
+.setPage_noteModal .close:hover,
+.setPage_noteModal .close:focus {
+    color: black;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+.setPage_noteEditor {
+    height: 30vh;
+}
+
+.setPage_noteEditor .ck.ck-editor__editable_inline {
+    border: 1px solid #ccced1;
+    border-radius: 2px;
+    transition: all 0.1s;
+    height: 100%;
+    overflow: auto;
+    padding: 1rem 1.5rem;
+}
+
+.setPage_modalOpen {
+    overflow: hidden;
+}
+
+.setPage_noteEditor
+    .ck.ck-editor__editable.ck-focused:not(.ck-editor__nested-editable) {
+    border: 1px solid hsl(218, 81.8%, 56.9%);
+    box-shadow: 2px 2px 3px rgba(0, 0, 0, 0.1) inset, 0, 0;
+}
+
+.setPage_noteUploadFile .btn-danger {
+    width: 2.5rem;
+    height: 2.5rem;
+}
+
+.setPage_noteUploadFile img {
+    max-height: 25vh;
+    max-width: 50%;
+}
+
+.kanji-search-ul > li {
+    list-style-type: square;
+}
+
+.gram-dec {
+    display: inline-block;
+    width: 100%;
+    margin: 0 0 10px;
+    text-align: left;
+    color: #292929;
+    font-size: 18px;
+    line-height: 25px;
+    padding: 20px;
+    font-weight: 500;
+    background-color: #f7f7f7;
+}
+
+.gram-div {
+    display: inline-block;
+    width: 100%;
+    padding: 15px 10px;
+    line-height: 20px;
+    border-left: 3px solid #55c0f2;
+    margin-bottom: 20px;
+    background-color: #f7f7f7;
+}
+
+.gram-ul {
+    padding-left: 40px;
+    margin: 10px 0 30px;
+    list-style: none;
+}
+
+.gram-ul li {
+    line-height: 20px;
+    font-size: 18px;
+    color: #000;
+    width: 100%;
+    margin-bottom: 15px;
+    position: relative;
+}
+
+.grammar-ex-japan {
+    display: block;
+    margin-top: 5px;
+}
+
+.furigana_text {
+    text-decoration: none;
+}
+
+.japan-font {
+    font-family: 'HiraKakuPro-W3', 'Hiragino Kaku Gothic Pro W3',
+        'Hiragino Kaku Gothic Pro', 'ヒラギノ角ゴ Pro W3', 'メイリオ', Meiryo,
+        '游ゴシック', YuGothic, 'ＭＳ Ｐゴシック', 'MS PGothic', 'ＭＳ ゴシック',
+        'MS Gothic', sans-serif;
+}
+
+#word-detail-overview p {
+    display: block;
+    text-align: center;
+    font-size: 30px;
+    color: #2326ec;
+}
+
+#word-detail-overview .romaji {
+    color: #888;
+    font-size: 16px;
+    clear: both;
+    display: block !important;
+    text-align: center;
+    margin-top: 5px;
+}
+
+#word-detail-overview .kana {
+    display: none;
+}
+
+.hkanji-wrapbtn a {
+    font-size: 18px;
+    line-height: 1.3333333;
+    color: #636363;
+    display: inline-block;
+    text-align: center;
+    white-space: nowrap;
+    vertical-align: middle;
+    position: relative;
+    outline: none;
+    text-decoration: none;
+    margin-top: -12px;
+}
+
+#word-detail-info .word-type {
+    color: #333;
+    font-size: 18px;
+    display: inline-block;
+    margin: 5px 0px;
+    background: #57545446;
+    padding: 3px 10px;
+    border-radius: 2px;
+}
+
+#word-detail-info > .ol-decimal {
+    font-size: 15px;
+    font-family: HelveticaLight;
+    margin-bottom: 10px;
+    margin-top: 15px;
+}
+
+#word-detail-info > .ol-decimal > li:before {
+    padding-right: 8px;
+    color: #555;
+    list-style: none !important;
+}
+
+#word-detail-info .nvmn-meaning {
+    font-size: 19px;
+    font-weight: 600;
+}
+
+#word-detail-info > .ol-decimal li .ul-disc {
+    padding-left: 20px;
+}
+
+#word-detail-info .ul-disc {
+    margin-left: 15px;
+}
+
+#word-detail-info > .ol-decimal li .ul-disc li {
+    margin: 10px 0 10px;
+    font-size: 18px;
+    line-height: 25px;
+    color: #292929;
+    list-style: none;
+    position: relative;
+    padding-left: 15px;
+}

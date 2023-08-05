@@ -1,0 +1,32 @@
+.translateContainer {
+    max-width: 80rem;
+    padding: 0 2rem;
+}
+
+.translateContainer .translateInput {
+    overflow: auto hidden;
+    box-sizing: border-box;
+    min-height: 9.375rem;
+    padding: 0.625rem 1rem;
+    line-height: 1.56;
+    resize: none;
+    border: none;
+    white-space: pre-wrap;
+    border-radius: 0;
+}
+
+.translateContainer .selectLang {
+    text-align: center;
+    cursor: pointer;
+    width: 50%;
+}
+
+.translateContainer .selectLang:focus {
+    box-shadow: none;
+    border-color: var(--bs-border-color);
+}
+
+.translateContainer .translateInput:focus {
+    box-shadow: none;
+    border: none;
+}

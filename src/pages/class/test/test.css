@@ -1,0 +1,271 @@
+/* tests list */
+.createTest_btn {
+    font-size: 1rem;
+    letter-spacing: 0.01;
+    font-weight: 500;
+    color: #fff;
+    background-color: rgb(25, 103, 210);
+    box-shadow: 0 1px 2px 0 rgba(32, 33, 36, 0.3),
+        0 2px 6px 2px rgba(32, 33, 36, 0.15);
+    height: 3rem;
+    padding: 0 1.25rem 0 1rem;
+    border-radius: 99px;
+    display: flex;
+    align-items: center;
+    text-decoration: none;
+    transition: all 0.15s;
+}
+
+.createTest_btn:hover {
+    background-color: #1a5cb6;
+}
+
+.createTestIcon_btn {
+    margin-right: 0.5rem;
+}
+
+.emptyTests_container {
+    border-top: 0.0625rem solid #e0e0e0;
+    margin-top: 2.5rem;
+}
+
+.emptyTests_container img {
+    margin: 5rem 0 1.5rem;
+    width: 15rem;
+}
+
+.emptyTests_heading {
+    letter-spacing: 0.02;
+    font-size: 0.875rem;
+    font-weight: 500;
+    line-height: 1.25rem;
+}
+
+.emptyTests_content {
+    margin: 0 auto 2rem;
+    letter-spacing: 0.02;
+    font-size: 0.875rem;
+    font-weight: 400;
+    text-align: center;
+}
+
+.accordionTests .accordion-button::after {
+    display: none;
+}
+
+.editTest_btn,
+.deleteTest_btn,
+.viewTest_btn {
+    color: rgb(25, 103, 210);
+    margin: -6px -8px -6px -8px;
+    background-color: transparent;
+    font-size: 0.875rem;
+    letter-spacing: 0.01;
+    font-weight: 500;
+    height: 36px;
+    padding: 0 8px 0 8px;
+    min-width: 64px;
+}
+
+.deleteTest_btn {
+    color: #ff6347;
+}
+
+.viewTest_btn {
+    color: var(--text-primary);
+}
+
+.viewTest_btn:hover {
+    background-color: #dddede;
+}
+
+.editTest_btn:hover {
+    background-color: #f6f9fd;
+}
+
+.deleteTest_btn:hover {
+    background-color: #fff1f0;
+}
+
+/* create test */
+.createTest_cancelBtn {
+    border: none;
+    display: inline-block;
+    font-size: 0.9375rem;
+    font-weight: 700;
+    letter-spacing: 0.075rem;
+    padding: 0 0 0.75rem;
+    color: var(--text-primary);
+    border-bottom: 5px solid var(--card-button-border);
+    text-decoration: none;
+    text-transform: uppercase;
+}
+
+.createTest_cancelBtn:hover {
+    color: var(--card-button-hover);
+    transition: all 0.3s;
+    border-color: var(--card-button-hover);
+}
+
+.createTest_status {
+    color: #939bb4;
+    font-size: 0.875rem;
+    font-weight: 600;
+    line-height: 1.29;
+    margin: 0.625rem 1rem;
+}
+
+.createTest_submitBtn,
+.createTest_draftBtn {
+    background-color: rgb(25, 103, 210);
+    margin: 0 0.12rem 0 0;
+    color: #fff;
+    padding: 0 24px 0 24px;
+    font-size: 0.875rem;
+    letter-spacing: 0.01rem;
+    font-weight: 500;
+    transition: border 0.28s cubic-bezier(0.4, 0, 0.2, 1),
+        box-shadow 0.28s cubic-bezier(0.4, 0, 0.2, 1);
+    box-shadow: none;
+    height: 36px;
+    border-radius: 4px 0 0 4px;
+    min-width: 64px;
+    text-decoration: none;
+}
+
+.createTest_submitBtn:hover:not(:disabled) {
+    background-color: #1a5cb6;
+    box-shadow: 0 1px 2px 0 rgba(60, 64, 67, 0.3),
+        0 1px 3px 1px rgba(60, 64, 67, 0.15);
+}
+
+.createTest_submitBtn:disabled,
+.createTest_draftBtn:disabled {
+    background-color: rgba(60, 64, 67, 0.12);
+    color: rgba(60, 64, 67, 0.38);
+    cursor: default;
+}
+
+.createTest_draftBtn {
+    background-color: rgb(25, 103, 210);
+    border-radius: 0 4px 4px 0;
+}
+
+.createTest_draftBtn:hover:not(:disabled) {
+    box-shadow: 0 2px 1px -1px rgba(25, 103, 210, 0.2),
+        0 1px 1px 0 rgba(25, 103, 210, 0.14),
+        0 1px 3px 0 rgba(25, 103, 210, 0.12);
+    background-color: #1a73e8;
+}
+
+.createTest_formGroup .form-control {
+    background-color: #f8f9fa;
+    border-radius: 4px 4px 0 0;
+    border: none;
+    outline: none;
+    border-bottom: 1px solid #80868b;
+    line-height: 1.5;
+    padding: 1rem;
+    font-size: 12pt;
+    font-weight: 400;
+    letter-spacing: 0;
+}
+
+.createTest_formGroup .form-control:hover {
+    background-color: #f1f3f4;
+}
+
+.createTest_formGroup .form-control:focus {
+    background-color: #f1f3f4;
+    box-shadow: none;
+    border-bottom: 2px solid rgb(66, 133, 244);
+}
+
+.createTest_img,
+.createTest_video {
+    max-height: 15rem;
+    max-width: 80%;
+}
+
+.createTest_img--sm,
+.createTest_video--sm {
+    max-height: 10rem;
+    max-width: 60%;
+}
+
+.createTest_video {
+    pointer-events: initial;
+}
+
+.createTest_formGroup-sm .form-control {
+    background-color: transparent;
+    border-radius: 4px 4px 0 0;
+    border: none;
+    outline: none;
+    min-height: 48px;
+    font-size: 11pt;
+    padding: 0.125rem 0;
+    border-bottom: 1px solid transparent;
+}
+
+.createTest_formGroup-sm:hover .form-control {
+    border-bottom: 1px solid rgba(0, 0, 0, 0.12);
+}
+
+.createTest_formGroup-sm .form-control:focus {
+    box-shadow: none;
+    border-bottom: 2px solid rgb(66, 133, 244);
+}
+
+.createTest_formGroup-sm .form-check-input:checked {
+    background-color: #0d6efd;
+    border-color: #0d6efd;
+}
+
+.createTest_addOptionBtn {
+    color: #70757a;
+    padding: 0.125rem 0;
+}
+
+.createTest_addOptionBtn:hover {
+    border-bottom: 1px solid rgba(0, 0, 0, 0.12);
+}
+
+.createTest_addQuesBtn {
+    border: none;
+    background-color: white;
+    display: inline-block;
+    font-size: 0.9375rem;
+    font-weight: 700;
+    letter-spacing: 0.075rem;
+    padding: 0 0 0.75rem;
+    color: var(--text-primary);
+    border-bottom: 5px solid var(--card-button-border);
+}
+
+.createTest_addQuesBtn:hover {
+    color: var(--card-button-hover);
+    transition: all 0.3s;
+    border-color: var(--card-button-hover);
+}
+
+.createAnswerContainer > .createAnswerContainer_btn .btn-hide {
+    display: none;
+}
+
+.uploadFileAnsItem,
+.uploadFileAnsItem--sm {
+    position: relative;
+}
+
+.uploadFileAnsItem button {
+    position: absolute;
+    top: -15;
+    left: -60;
+}
+
+.uploadFileAnsItem--sm button {
+    position: absolute;
+    top: -8;
+    left: -8;
+}

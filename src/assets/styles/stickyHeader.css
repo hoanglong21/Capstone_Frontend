@@ -1,0 +1,7 @@
+.sticky-header {
+    background-color: var(--bg-color);
+}
+
+.scroll-shadows {
+    box-shadow: 0 .25rem 1rem 0 #00000029;
+}

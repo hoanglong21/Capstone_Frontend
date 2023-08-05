@@ -1,0 +1,118 @@
+.file_upload {
+    opacity: 0;
+    display: none;
+}
+
+label {
+    cursor: pointer;
+}
+
+div.card {
+    border-color: var(--card-border);
+}
+
+div.card_header {
+    border-bottom: 2px solid var(--card-border);
+    background-color: white;
+}
+
+.card_header_label {
+    display: block;
+    color: var(--card-color);
+    font-weight: 700;
+}
+
+.card_body .card_header_label {
+    font-size: 0.75rem;
+    font-weight: 600;
+    letter-spacing: 0.0625rem;
+}
+
+select.card_select,
+input.card_control {
+    border: none;
+    border-bottom: 0.125rem solid var(--editor-border);
+    border-radius: 0;
+    padding: 1rem 0.5rem;
+    transition: all 0.1s;
+}
+
+select.card_select:focus,
+input.card_control:focus {
+    border: none;
+    border-bottom: 0.25rem solid var(--editor-border-focus);
+    box-shadow: none;
+}
+
+/* Hide arrow input number */
+/* Chrome, Safari, Edge, Opera */
+input[type='number']::-webkit-outer-spin-button,
+input[type='number']::-webkit-inner-spin-button {
+    -webkit-appearance: none;
+    margin: 0;
+}
+/* Firefox */
+input[type='number'] {
+    -moz-appearance: textfield;
+}
+
+.card_strokeImageWrapper {
+    max-height: 10rem;
+    position: relative;
+}
+
+.card_strokeImage {
+    overflow: hidden;
+}
+
+.card_delImage {
+    position: absolute;
+    top: -8;
+    left: -8;
+}
+
+.card_uploadImage {
+    height: 3.75rem;
+    width: 5.25rem;
+    border: 0.125rem dashed var(--editor-border);
+    border-radius: 0.3125rem;
+    cursor: pointer;
+    transition: all 0.2s;
+}
+
+.card_uploadImage:hover {
+    color: var(--editor-border-focus);
+}
+
+div.card_footer {
+    border-top: 2px solid var(--card-border);
+    background-color: white;
+}
+
+.card_button {
+    border: none;
+    background-color: white;
+    display: inline-block;
+    font-size: 0.9375rem;
+    font-weight: 700;
+    letter-spacing: 0.075rem;
+    padding: 0 0 0.75rem;
+    color: var(--text-primary);
+    border-bottom: 5px solid var(--card-button-border);
+}
+
+.card_button:hover {
+    color: var(--card-button-hover);
+    transition: all 0.3s;
+    border-color: var(--card-button-hover);
+}
+
+.image_upload {
+    height: auto;
+    width: 10rem;
+}
+
+.btn_del {
+    width: 2.5rem;
+    height: 2.5rem;
+}

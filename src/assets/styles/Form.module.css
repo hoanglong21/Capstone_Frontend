@@ -1,0 +1,57 @@
+.formLabel {
+    color: var(--text-light);
+    font-weight: 600;
+    margin-bottom: 0.5rem;
+}
+
+input.formControl,
+textarea.formControl {
+    color: var(--form-text);
+    border: 1px solid var(--form-border);
+    white-space: pre-wrap;
+}
+
+input.formControl_noLabel {
+    padding: 0.25rem 1rem;
+    height: 3rem;
+    font-weight: 500;
+}
+
+input.formControl:focus,
+textarea.formControl:focus {
+    box-shadow: none;
+    border-color: var(--form-border-focus);
+    box-shadow: 0 0 0 0.25rem var(--form-check-shadow);
+}
+
+input.formCheckInput:focus {
+    box-shadow: 0 0 0 0.25rem var(--form-check-shadow);
+    border-color: var(--form-border-focus);
+}
+
+button.btn {
+    padding: 0.7rem 0;
+}
+
+button.btnLarge {
+    padding: 1.25rem 2rem;
+}
+
+label.labelRadio {
+    color: var(--form-text);
+    transition: all 0.3s;
+}
+
+label.labelRadio:hover {
+    color: var(--form-label-hover);
+}
+
+select.formSelect {
+    color: var(--form-text);
+    border: 1px solid var(--form-border);
+}
+
+select.formSelect:focus {
+    box-shadow: 0 0 0 0.25rem var(--form-check-shadow);
+    border-color: var(--form-border-focus);
+}

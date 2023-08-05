@@ -1,0 +1,276 @@
+:root {
+    --btn-del: var(--red-56);
+    --classCode_value: var(--cyan-blue-38);
+}
+
+.mainClass_container {
+    max-width: 80rem;
+    padding: 2.5rem 5rem;
+}
+
+.mainClassHeader_icon {
+    color: #939bb4;
+}
+
+.mainClass_title {
+    font-size: 2.375rem;
+    font-weight: 700;
+    line-height: 1.26;
+    overflow-wrap: break-word;
+}
+
+.mainClass_navbar {
+    border-bottom: 0.15rem solid #edeff4;
+}
+
+.mainClass_navlink {
+    font-size: 0.875rem;
+    letter-spacing: normal;
+    line-height: 1.43;
+    color: #586380;
+    font-weight: 600;
+    min-height: 2.5rem;
+    margin: 0 1rem;
+    margin-bottom: -0.11rem;
+    white-space: nowrap;
+    display: flex;
+    align-items: center;
+}
+
+.mainClass_navlink.active {
+    color: #282e3e;
+    border-bottom: 0.15rem solid #4255ff;
+}
+
+.mainClass_container .btn.show {
+    color: initial;
+}
+
+.mainClass_container .btn-del {
+    color: var(--btn-del);
+}
+
+/* stream */
+.classCode_container {
+    color: var(--classCode_value);
+}
+
+.mainClass_sectionTitle {
+    letter-spacing: 0.2;
+    font-size: 0.875rem;
+    font-weight: 500;
+    line-height: 1.25rem;
+}
+
+.mainClass_sectionButton {
+    margin: -0.75rem;
+}
+
+.classCode_value {
+    font-weight: 500;
+    font-style: normal;
+    font-size: 1.1rem;
+    color: var(--classCode_value);
+}
+
+.mainClass_subText {
+    margin-top: 1.5rem;
+    color: #807373;
+    font-weight: 400;
+}
+
+.mainClass_status {
+    border: 1.5px solid #dadce0;
+    padding: 20px;
+    border-radius: 10px;
+    width: 15vw;
+    height: 25vh;
+}
+
+.mainClass_postAddContainer {
+    box-shadow: 0 1px 2px 0 rgba(60, 64, 67, 0.302),
+        0 2px 6px 2px rgba(60, 64, 67, 0.149);
+    min-height: 4.5rem;
+    padding: 1.875rem;
+    cursor: pointer;
+}
+
+.mainClass_postAddWrapper {
+    color: rgba(0, 0, 0, 0.549);
+}
+
+.mainClass_postAddWrapper:hover {
+    color: rgb(66, 133, 244);
+}
+
+.postTextEditor .ck.ck-editor__editable_inline {
+    background-color: #f8f9fa;
+    border-radius: 0.25rem;
+    padding: 0.625rem 1rem;
+    min-height: 10rem;
+}
+
+.postTextEditor .ck.ck-editor__editable_inline:hover {
+    background-color: #f1f3f4;
+}
+
+.maiClass_postAddAuthor {
+    height: 2.5rem;
+    width: 2.5rem;
+    overflow: hidden;
+    border-radius: 50%;
+}
+
+#filled-multiline-flexible {
+    width: 53.5vw !important;
+    height: 20vh !important;
+    border-radius: 5px;
+    border: none;
+}
+
+.postUpload {
+    opacity: 0;
+    display: none;
+}
+
+.postUploadButton {
+    display: inline-block;
+    width: 3rem;
+    height: 3rem;
+    color: rgb(25, 103, 210);
+    background-color: transparent;
+    border: 0.0625rem solid #e8eaed;
+}
+
+.postUploadButton:hover {
+    background-color: #f6f9fd;
+}
+
+.fileUploadContainer {
+    text-overflow: ellipsis;
+    overflow: hidden;
+    white-space: nowrap;
+}
+
+.fileUploadName {
+    text-overflow: ellipsis;
+    overflow: hidden;
+    white-space: nowrap;
+    letter-spacing: 0.00625rem;
+    font-size: 1rem;
+    font-weight: 500;
+    color: var(--text-primary);
+}
+
+.fileUploadType {
+    text-overflow: ellipsis;
+    overflow: hidden;
+    white-space: nowrap;
+    letter-spacing: 0.014rem;
+    font-size: 0.875rem;
+    font-weight: 400;
+    line-height: 1.25rem;
+    color: var(--text-primary);
+}
+
+.btn.fileUploadDelButton:hover {
+    color: var(--red-64);
+}
+
+.postUploadFile button {
+    margin-right: 15px;
+    border: none;
+    padding: 5px 13px;
+    border-radius: 5px;
+}
+
+.mainClass_infoTitle {
+    font-size: 1.875rem;
+    font-weight: 700;
+    line-height: 1.266;
+}
+
+.mainClass_infoLabel {
+    font-size: 0.75rem;
+    font-weight: 600;
+    letter-spacing: 0.0625rem;
+    line-height: 1.333;
+    color: #586380;
+}
+
+.mainClass_authorAvatar {
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+}
+
+/* people */
+.people_heading {
+    border-bottom: 1px solid rgb(66, 133, 244);
+    padding-left: 1rem;
+    height: 4.5rem;
+    display: flex;
+    align-items: center;
+}
+
+.people_heading h2 {
+    color: rgb(25, 103, 210) !important;
+    font-size: 2rem;
+    font-weight: 400;
+    line-height: 2.5rem;
+}
+
+.people_heading p {
+    color: rgb(25, 103, 210);
+    letter-spacing: 0.017;
+    font-size: 0.875rem;
+    font-weight: 500;
+    line-height: 1.25rem;
+    margin: 0;
+}
+
+.people_avatar {
+    width: 32px;
+    height: 32px;
+    border-radius: 50%;
+}
+
+.people_username {
+    text-overflow: ellipsis;
+    overflow: hidden;
+    white-space: nowrap;
+    margin-left: 0.5rem;
+    letter-spacing: 0.017;
+    font-size: 0.875rem;
+    font-weight: 500;
+    line-height: 1.25rem;
+}
+
+.people_btn {
+    padding: 0.75rem;
+    border: none;
+    font-size: 0.875rem;
+    font-weight: 600;
+    line-height: 1.285;
+    transition: all 0.12s cubic-bezier(0.47, 0, 0.745, 0.715);
+}
+
+.people_btn:hover {
+    color: #ffcd1f;
+}
+
+.people_btn--accept {
+    color: #0c36ff;
+    padding-right: 0;
+}
+
+.people_btn--decline {
+    color: #ff725b;
+    padding-left: 0;
+}
+
+.people_btnDivider {
+    height: 1rem;
+    border-right: 0.125rem solid #dbdfff;
+    margin: 0 0.625rem;
+}
